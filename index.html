@@ -5,13 +5,31 @@
 <meta name="keywords" content="Yumeng Liu, The University of Hong Kong, HKU, 刘雨萌, 香港大学, Computer Graphics, Embodied AI"> 
 <meta name="description" content="Yumeng Liu&#39;s home page">
 <link rel="stylesheet" href="./Homepage_files/style/jemdoc.css" type="text/css">
+
 <style type="text/css">
+/* 统一所有 session 标题样式 */
+h2, .session-title {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1.7rem;
+  color: #204060;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-top: 36px;
+  margin-bottom: 14px;
+}
+.pub-note {
+      font-size: 14px;
+      color: #555;
+      margin-top: 6px;
+      margin-bottom: 24px;
+      font-style: italic;
+}
 </style>
+
+
 <title>Yumeng Liu - Homepage</title>
 <link rel="shortcut icon" href="./Homepage_files/img/homepage.ico" >
-<!--link rel="shortcut icon" type="image/gif" href="./Homepage_files/img/animated_favicon1.gif" -->
 </head>
-
 
 <body>
 <div id="layout-content" style="margin-top:25px">
@@ -21,7 +39,6 @@
     <td width="19%" valign="top" height="173">
       <img height="255" id="photo" style="padding: 0pt 30pt 0pt 0pt; float: left; display: inline;" src="./Homepage_files/img/me.jpg">
     </td>
-    
     <td width="80%" valign="top" height="173">
       <b><font face="Times New Roman" size="6">Yumeng Liu</font><font size="6" face="楷体_GB2312"> （刘雨萌）</font><font face="Times New Roman" size="6"></font></b>
       <br> 
@@ -49,173 +66,27 @@
 
 <table  border="0" width="100%"> <tbody>
    <tr>
-    <h2>Biography</h2>
+    <h2 class="session-title">Biography</h2>
     <p style="text-align:justify;">
       I recently completed my Ph.D. in Computer Science at the University of Hong Kong. During my PhD studies, I was grateful to be supervised by Prof. <a href="https://www.cs.hku.hk/people/academic-staff/wenping">Wenping Wang</a> and Prof. <a href="https://i.cs.hku.hk/~taku/">Taku Komura</a>. I also had the opportunity to collaborate closely with Prof. <a href="https://yuexinma.me/">Yuexin Ma</a> and work under her guidance in <a href="https://4dvlab.github.io/">4DVLab</a> at ShanghaiTech University. 
 	    Prior to this, I received a B.Sc. degree from School of the Gifted Young, the University of Science and Technology of China with the speciality of Computational Mathematics.
     </p>
   </tr>
  
-    <h2>Research interests </h2>
+    <h2 class="session-title">Research interests</h2>
     I am interested in applying human knowledge to robotic manipulation. This includes understanding how humans interact with their environments and adapting these skills to enhance robotic tasks.
- 
-  
 </tbody></table>
 
-<table border="0" width="100%"> <tbody>
-<h2>Publications</h2>
-<p style="font-size: 14px; color: #555; margin-top: 10px; margin-bottom: -120px;font-style: italic;">
+<!-- News Session -->
+<h2 class="session-title">News</h2>
+<iframe src="news.html" style="width:100%;max-width:800px;height:200px;border:none;display:block;margin:32px auto;" scrolling="no"></iframe>
+
+<!-- Publications Session -->
+<h2 class="session-title">Publications</h2>
+<div class="pub-note">
   * indicates equal contribution. &dagger; indicates corresponding authors.
-</p>
-
-<!-- FreqPolicy: Frequency Autoregressive Visuomotor Policy with Continuous Tokens -->
-<tr>
-  <td>
-    <div align="center">
-      <img width="240" src="./project-teasers/freqpolicy.png" alt="">
-    </div>
-  </td>
-  <td>
-    <a href="https://freq-policy.github.io/" target="_blank">
-      FreqPolicy: Frequency Autoregressive Visuomotor Policy with Continuous Tokens
-    </a>
-    <br>
-    Yiming Zhong, <strong> Yumeng Liu </strong>, Chuyang Xiao, Zemin Yang, Youzhuo Wang, Yufei Zhu, Ye Shi, Yujing Sun, Xinge Zhu, Yuexin Ma&dagger;
-    <br>
-    <strong> Arxiv Preprint</strong>
-    <br>
-    [<a href="https://freq-policy.github.io/" target="_blank">Code</a>]
-    [<a href="https://arxiv.org/abs/2506.01583" target="_blank">Arxiv</a>]
-  </td>
-</tr>
-
-<br>
-<br>
-
-
-<!-- A Potential Field Method for Tooth Motion Planning in Orthodontic Treatment -->
-<tr>
-  <td>
-    <div align="center">
-      <img width="240" src="./ToothPlan/Toothplan.png" alt="">
-    </div>
-  </td>
-  <td>
-    A Potential Field Method for Tooth Motion Planning in Orthodontic Treatment<br>
-    <strong>Yumeng Liu</strong>,
-    Yuexin Ma, Lei Yang, Congyi Zhang&dagger;, Guangshun Wei, Runnan Chen, Min Gu, Jia Pan, Zhengbao Yang, Taku Komura, 
-    Shiqing Xin, Yuanfeng Zhou, Changhe Tu, Wenping Wang&dagger;
-    <br> 
-    <strong> IEEE Transactions on Visualization and Computer Graphics (TVCG), 2025. </strong>
-    <br>
-  </td>
-</tr>
-
-<br>
-<br>
-
-
-<!-- EasyHOI: Unleashing the Power of Large Models for Reconstructing Hand-Object Interactions in the Wild -->
-<tr>
-  <td>
-    <div align="center">
-      <img width="240" src="./project-teasers/easyhoi.png" alt="">
-    </div>
-  </td>
-  <td>
-    <a href="https://lym29.github.io/EasyHOI-page/" target="_blank">
-      EasyHOI: Unleashing the Power of Large Models for Reconstructing Hand-Object Interactions in the Wild
-    </a>
-    <br>
-    <strong>Yumeng Liu</strong>,
-    Xiaoxiao Long&dagger;, Zemin Yang, Yuan Liu, Marc Habermann, Christian Theobalt, Yuexin Ma&dagger;, Wenping Wang
-    <br>
-    <strong>Conference on Computer Vision and Pattern Recognition(CVPR), 2025. </strong>
-    <br>
-    [<a href="https://github.com/lym29/EasyHOI" target="_blank">Code</a>]
-    [<a href="https://arxiv.org/abs/2411.14280" target="_blank">Arxiv</a>]
-  </td>
-</tr>
-
-<br>
-<br>
-
-
-<!-- Realdex: Towards human-like grasping for robotic dexterous hand -->
-<tr>
-  <td>
-    <div align="center">
-      <img width="240" src="./Realdex/Realdex.png" alt="">
-    </div>
-  </td>
-  <td>
-    <a href="https://4dvlab.github.io/RealDex_page/" target="_blank">Realdex: Towards human-like grasping for robotic dexterous hand </a>  
-    <br>  
-    <strong>Yumeng Liu*</strong>, 
-	  Yaxun Yang*, Youzhuo Wang*, Xiaofei Wu, Jiamin Wang, Yichen Yao, Sören Schwertfeger, Sibei Yang, Wenping Wang, 
-    Jingyi Yu, Xuming He, Yuexin Ma&dagger;
-    <br> 
-    <strong>International Joint Conference on Artificial Intelligence(IJCAI), 2024. </strong> 
-    <br>
-    [<a href="https://github.com/4DVLab/RealDex" target="_blank">Code</a>]
-    [<a href="https://drive.google.com/drive/folders/1d5OSVuvYr6-OMG_cuKeoFy6lNdezX8nc" target="_blank">Database</a>]
-    [<a href="https://doi.org/10.24963/ijcai.2024/758" target="_blank">DOI</a>] 
-  </td>
-</tr>  
-
-<br>
-<br>
-
-
-<!-- Tanet: Towards fully automatic tooth arrangement -->
-<tr>
-  <td>
-    <div align="center">
-      <img width="240" src="./Tanet/Tanet.png" alt="">
-    </div>
-  </td>
-  <td>
-    <a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123600477.pdf" target="_blank">Tanet: Towards fully automatic tooth arrangement</a>  
-    <br> 
-	  Guodong Wei, Zhiming Cui, 
-    <strong>Yumeng Liu</strong>, 
-    Nenglun Chen, Runnan Chen, Guiqing Li, Wenping Wang&dagger;
-    <br> 
-    <strong>European Conference on Computer Vision (ECCV), 2020.</strong> 
-    <br>
-    [<a href="https://doi.org/10.1007/978-3-030-58555-6_29" target="_blank">DOI</a>]
-  </td>
-</tr>  
-
-</tbody> </table>
-
-<!-- <table  border="0" width="100%"> <tbody>
-  <h2>Honors and Awards</h2>
-    <tr>
-      <td>HUAWEI Scholarship for Graduate Students </td>
-      <td align="right"> 2018 </td> 
-    </tr>
-    <tr>
-      <td>Yang Yuanqing Top Research Fellowship </td>
-      <td align="right"> 2018 </td> 
-    </tr>
-    <tr>
-      <td> National Scholarship for Graduate Students </td>
-      <td align="right"> 2017 </td> 
-    </tr>
-	
-</tbody> </table> -->
-
-<!-- <table  border="0" width="100%"> <tbody>
-<h2> </h2>
-<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?&cl=ffffff&w=300&t=tt&d=LKF4rGzn2vCys_fz0m_51B8wAO3GyfLb5EjkfDzaJPw"></script> -->
-
-<!--  <h2> </h2>
-<a href="https://www.easycounter.com/"> <img src="https://www.easycounter.com/counter.php?ecycy"
-border="0" alt="Website Hit Counter"></a>
-<br><a href="https://www.easycounter.com/">HTML Hit Counters</a>
-<font size="2"> visits since 2019-05-07. </font>	-->
-<!-- </tbody> </table> -->
+</div>
+<iframe src="publication.html" style="width:100%;max-width:950px;height:1200px;border:none;display:block;margin:0 auto;"></iframe>
 
 </div>
 </body>

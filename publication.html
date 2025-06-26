@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Publications</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: transparent;
+    }
+    .pub-section {
+      max-width: 950px;
+      margin: 0 auto 40px auto;
+      padding: 0 8px;
+    }
+    .pub-section h2 {
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 1.7rem;
+      color: #204060;
+      font-weight: 700;
+      margin-top: 0px;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+    .publication-block {
+      display: flex;
+      align-items: flex-start;
+      gap: 28px;
+      margin-bottom: 42px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #f6f7fa;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.03);
+      transition: box-shadow 0.2s;
+    }
+    .publication-block:last-child {
+      border-bottom: none;
+      margin-bottom: 20px;
+    }
+    .pub-img {
+      width: 160px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .pub-img img {
+      width: 100%;
+      max-width: 160px;
+      border-radius: 10px;
+      background: #f2f4f8;
+      border: 1px solid #e8e9ee;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.04);
+    }
+    .pub-info {
+      flex: 1;
+      min-width: 0;
+    }
+    .pub-title {
+      font-weight: bold;
+      font-size: 1.13rem;
+      color: #204060;
+      margin-bottom: 3px;
+      text-decoration: none;
+    }
+    .pub-authors {
+      color: #555;
+      font-size: 0.98rem;
+      margin-bottom: 2px;
+      line-height: 1.5;
+    }
+    .myname {
+      color: #174ea6;
+      font-weight: bold;
+    }
+    .pub-venue {
+      color: #777;
+      font-size: 0.97rem;
+      font-style: italic;
+      margin-bottom: 2px;
+    }
+    .pub-links {
+      margin-top: 5px;
+      font-size: 0.98rem;
+    }
+    .pub-links a {
+      color: #1d72b8;
+      text-decoration: none;
+      margin-right: 12px;
+      transition: color 0.15s;
+    }
+    .pub-links a:hover {
+      color: #e14;
+      text-decoration: underline;
+    }
+    @media (max-width: 700px) {
+      .publication-block {
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px 5vw 18px 5vw;
+      }
+      .pub-img {
+        width: 100%;
+        margin-bottom: 10px;
+        justify-content: flex-start;
+      }
+      .pub-info {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="pub-section">
+    <!-- DexH2R -->
+    <div class="publication-block">
+      <div class="pub-img">
+        <img src="./project-teasers/DexH2R.png" alt="DexH2R">
+      </div>
+      <div class="pub-info">
+        <a class="pub-title" href="" target="_blank">
+          DexH2R: A Benchmark for Dynamic Dexterous Grasping in Human-to-Robot Handover
+        </a>
+        <div class="pub-authors">
+          Youzhuo Wang*, Jiayi Ye*, Chuyang Xiao, Yiming Zhong, Heng Tao, Hang Yu, <strong class="myname">Yumeng Liu</strong>, Jingyi Yu, Yuexin Ma&dagger;
+        </div>
+        <div class="pub-venue">
+          International Conference on Computer Vision (ICCV), 2025
+        </div>
+        <div class="pub-links">
+          [<a href="" target="_blank">Will Be Released Soon</a>]
+        </div>
+      </div>
+    </div>
+
+    <!-- FreqPolicy -->
+    <div class="publication-block">
+      <div class="pub-img">
+        <img src="./project-teasers/freqpolicy.png" alt="FreqPolicy">
+      </div>
+      <div class="pub-info">
+        <a class="pub-title" href="https://freq-policy.github.io/" target="_blank">
+          FreqPolicy: Frequency Autoregressive Visuomotor Policy with Continuous Tokens
+        </a>
+        <div class="pub-authors">
+          Yiming Zhong, <strong class="myname">Yumeng Liu</strong>, Chuyang Xiao, Zemin Yang, Youzhuo Wang, Yufei Zhu, Ye Shi, Yujing Sun, Xinge Zhu, Yuexin Ma&dagger;
+        </div>
+        <div class="pub-venue">
+          Arxiv Preprint
+        </div>
+        <div class="pub-links">
+          [<a href="https://freq-policy.github.io/" target="_blank">Code</a>]
+          [<a href="https://arxiv.org/abs/2506.01583" target="_blank">Arxiv</a>]
+        </div>
+      </div>
+    </div>
+
+    <!-- ToothPlan -->
+    <div class="publication-block">
+      <div class="pub-img">
+        <img src="./ToothPlan/Toothplan.png" alt="ToothPlan">
+      </div>
+      <div class="pub-info">
+        <span class="pub-title">
+          A Potential Field Method for Tooth Motion Planning in Orthodontic Treatment
+        </span>
+        <div class="pub-authors">
+          <strong class="myname">Yumeng Liu</strong>,
+          Yuexin Ma, Lei Yang, Congyi Zhang&dagger;, Guangshun Wei, Runnan Chen, Min Gu, Jia Pan, Zhengbao Yang, Taku Komura, 
+          Shiqing Xin, Yuanfeng Zhou, Changhe Tu, Wenping Wang&dagger;
+        </div>
+        <div class="pub-venue">
+          IEEE Transactions on Visualization and Computer Graphics (TVCG), 2025.
+        </div>
+      </div>
+    </div>
+
+    <!-- EasyHOI -->
+    <div class="publication-block">
+      <div class="pub-img">
+        <img src="./project-teasers/easyhoi.png" alt="EasyHOI">
+      </div>
+      <div class="pub-info">
+        <a class="pub-title" href="https://lym29.github.io/EasyHOI-page/" target="_blank">
+          EasyHOI: Unleashing the Power of Large Models for Reconstructing Hand-Object Interactions in the Wild
+        </a>
+        <div class="pub-authors">
+          <strong class="myname">Yumeng Liu</strong>,
+          Xiaoxiao Long&dagger;, Zemin Yang, Yuan Liu, Marc Habermann, Christian Theobalt, Yuexin Ma&dagger;, Wenping Wang
+        </div>
+        <div class="pub-venue">
+          Conference on Computer Vision and Pattern Recognition (CVPR), 2025.
+        </div>
+        <div class="pub-links">
+          [<a href="https://github.com/lym29/EasyHOI" target="_blank">Code</a>]
+          [<a href="https://arxiv.org/abs/2411.14280" target="_blank">Arxiv</a>]
+        </div>
+      </div>
+    </div>
+
+    <!-- Realdex -->
+    <div class="publication-block">
+      <div class="pub-img">
+        <img src="./Realdex/Realdex.png" alt="Realdex">
+      </div>
+      <div class="pub-info">
+        <a class="pub-title" href="https://4dvlab.github.io/RealDex_page/" target="_blank">
+          Realdex: Towards human-like grasping for robotic dexterous hand 
+        </a>
+        <div class="pub-authors">
+          <strong class="myname">Yumeng Liu*</strong>, 
+          Yaxun Yang*, Youzhuo Wang*, Xiaofei Wu, Jiamin Wang, Yichen Yao, Sören Schwertfeger, Sibei Yang, Wenping Wang, 
+          Jingyi Yu, Xuming He, Yuexin Ma&dagger;
+        </div>
+        <div class="pub-venue">
+          International Joint Conference on Artificial Intelligence (IJCAI), 2024.
+        </div>
+        <div class="pub-links">
+          [<a href="https://github.com/4DVLab/RealDex" target="_blank">Code</a>]
+          [<a href="https://drive.google.com/drive/folders/1d5OSVuvYr6-OMG_cuKeoFy6lNdezX8nc" target="_blank">Database</a>]
+          [<a href="https://doi.org/10.24963/ijcai.2024/758" target="_blank">DOI</a>]
+        </div>
+      </div>
+    </div>
+
+    <!-- Tanet -->
+    <div class="publication-block">
+      <div class="pub-img">
+        <img src="./Tanet/Tanet.png" alt="Tanet">
+      </div>
+      <div class="pub-info">
+        <a class="pub-title" href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123600477.pdf" target="_blank">
+          Tanet: Towards fully automatic tooth arrangement
+        </a>
+        <div class="pub-authors">
+          Guodong Wei, Zhiming Cui, 
+          <strong class="myname">Yumeng Liu</strong>, 
+          Nenglun Chen, Runnan Chen, Guiqing Li, Wenping Wang&dagger;
+        </div>
+        <div class="pub-venue">
+          European Conference on Computer Vision (ECCV), 2020.
+        </div>
+        <div class="pub-links">
+          [<a href="https://doi.org/10.1007/978-3-030-58555-6_29" target="_blank">DOI</a>]
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
