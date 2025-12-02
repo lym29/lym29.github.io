@@ -24,6 +24,28 @@ h2, .session-title {
       margin-bottom: 24px;
       font-style: italic;
 }
+.research-interests-list {
+      list-style: none;
+      margin-top: 8px;
+      margin-bottom: 20px;
+      padding-left: 20px;
+}
+.research-interests-list li {
+      position: relative;
+      padding-left: 22px;
+      margin-bottom: 10px;
+      line-height: 1.6;
+      color: #333;
+      font-size: 1rem;
+}
+.research-interests-list li::before {
+      content: "●";
+      position: absolute;
+      left: 0;
+      color: #174ea6;
+      font-size: 0.9rem;
+      font-weight: bold;
+}
 </style>
 
 
@@ -74,7 +96,13 @@ h2, .session-title {
   </tr>
  
     <h2 class="session-title">Research interests</h2>
-    I am interested in applying human knowledge to robotic manipulation. This includes understanding how humans interact with their environments and adapting these skills to enhance robotic tasks.
+    <p>I am currently exploring the following research directions:</p>
+    <ul class="research-interests-list">
+      <li>3D/4D modeling for interactive behaviors and scenes</li>
+      <li>Imitation learning and skill transfer</li>
+      <li>Embodied intelligence for robotics and autonomous driving</li>
+    </ul>
+    <p>I am interested in advancing 3D/4D modeling for interactive behaviors and scenes, using these data to develop imitation learning and skill transfer methods for robots, and leveraging high-fidelity scene models to improve autonomous driving. Ultimately, I aim to bring embodied AI closer to human-level intelligence in real-world environments.</p>
 </tbody></table>
 
 <!-- News Session -->
