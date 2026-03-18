@@ -85,16 +85,46 @@
     .pub-links {
       margin-top: 5px;
       font-size: 0.98rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
     }
     .pub-links a {
       color: #1d72b8;
       text-decoration: none;
-      margin-right: 12px;
-      transition: color 0.15s;
+      transition: color 0.15s, border-color 0.15s, background 0.15s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border: 1px solid #c8dbf3;
+      border-radius: 999px;
+      background: #f4f9ff;
+      font-size: 0.92rem;
+      line-height: 1.2;
     }
     .pub-links a:hover {
-      color: #e14;
-      text-decoration: underline;
+      color: #0f5f9b;
+      border-color: #99bde8;
+      background: #ebf4ff;
+      text-decoration: none;
+    }
+    .link-icon {
+      width: 14px;
+      height: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .link-icon svg {
+      width: 14px;
+      height: 14px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
     @media (max-width: 700px) {
       .publication-block {
@@ -131,8 +161,8 @@
           Conference on Computer Vision and Pattern Recognition (CVPR), 2026.
         </div>
         <div class="pub-links">
-          [<a href="https://wuxiaofei01.github.io/AffordGrasp_page/" target="_blank">Code</a>]
-          [<a href="" target="_blank">Arxiv</a>]
+          <a class="link-code" href="https://wuxiaofei01.github.io/AffordGrasp_page/" target="_blank"><span class="link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.11.79-.25.79-.56v-2.03c-3.2.7-3.88-1.35-3.88-1.35-.52-1.34-1.27-1.7-1.27-1.7-1.04-.7.08-.69.08-.69 1.16.08 1.77 1.19 1.77 1.19 1.02 1.77 2.69 1.26 3.35.97.1-.75.4-1.26.73-1.54-2.56-.29-5.26-1.29-5.26-5.73 0-1.27.45-2.29 1.19-3.1-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.17 1.18a10.95 10.95 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.77.12 3.06.74.81 1.19 1.83 1.19 3.1 0 4.45-2.71 5.44-5.29 5.72.42.36.78 1.05.78 2.12v3.14c0 .31.21.67.8.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z" fill="currentColor" stroke="none"></path></svg></span><span>Code</span></a>
+          <a class="link-arxiv" href="https://arxiv.org/abs/2603.08021" target="_blank"><span class="link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="8" y1="13" x2="16" y2="13"></line><line x1="8" y1="17" x2="16" y2="17"></line></svg></span><span>ArXiv</span></a>
         </div>
       </div>
     </div>
@@ -154,7 +184,7 @@
         </div>
         <div class="pub-links">
           <!-- [<a href="" target="_blank">Code</a>] -->
-          [<a href="https://www.arxiv.org/abs/2511.22187" target="_blank">Arxiv</a>]
+          <a class="link-arxiv" href="https://www.arxiv.org/abs/2511.22187" target="_blank"><span class="link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="8" y1="13" x2="16" y2="13"></line><line x1="8" y1="17" x2="16" y2="17"></line></svg></span><span>ArXiv</span></a>
         </div>
       </div>
     </div>
@@ -175,8 +205,8 @@
           The Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS), 2025.
         </div>
         <div class="pub-links">
-          [<a href="https://freq-policy.github.io/" target="_blank">Code</a>]
-          [<a href="https://arxiv.org/abs/2506.01583" target="_blank">Arxiv</a>]
+          <a class="link-code" href="https://freq-policy.github.io/" target="_blank"><span class="link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.11.79-.25.79-.56v-2.03c-3.2.7-3.88-1.35-3.88-1.35-.52-1.34-1.27-1.7-1.27-1.7-1.04-.7.08-.69.08-.69 1.16.08 1.77 1.19 1.77 1.19 1.02 1.77 2.69 1.26 3.35.97.1-.75.4-1.26.73-1.54-2.56-.29-5.26-1.29-5.26-5.73 0-1.27.45-2.29 1.19-3.1-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.17 1.18a10.95 10.95 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.77.12 3.06.74.81 1.19 1.83 1.19 3.1 0 4.45-2.71 5.44-5.29 5.72.42.36.78 1.05.78 2.12v3.14c0 .31.21.67.8.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z" fill="currentColor" stroke="none"></path></svg></span><span>Code</span></a>
+          <a class="link-arxiv" href="https://arxiv.org/abs/2506.01583" target="_blank"><span class="link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="8" y1="13" x2="16" y2="13"></line><line x1="8" y1="17" x2="16" y2="17"></line></svg></span><span>ArXiv</span></a>
         </div>
       </div>
     </div>
@@ -197,9 +227,9 @@
           International Conference on Computer Vision (ICCV), 2025
         </div>
         <div class="pub-links">
-          [<a href="https://github.com/4DVLab/DexH2R" target="_blank">Code</a>]
-          [<a href="https://arxiv.org/abs/2505.06136" target="_blank">Arxiv</a>]
-          [<a href="https://drive.google.com/drive/folders/1dco6ooYR7BWh_ULDX-n5EKZ5FFaU_rVQ" target="_blank">Dataset</a>]
+          <a class="link-code" href="https://github.com/4DVLab/DexH2R" target="_blank"><span class="link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.11.79-.25.79-.56v-2.03c-3.2.7-3.88-1.35-3.88-1.35-.52-1.34-1.27-1.7-1.27-1.7-1.04-.7.08-.69.08-.69 1.16.08 1.77 1.19 1.77 1.19 1.02 1.77 2.69 1.26 3.35.97.1-.75.4-1.26.73-1.54-2.56-.29-5.26-1.29-5.26-5.73 0-1.27.45-2.29 1.19-3.1-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.17 1.18a10.95 10.95 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.77.12 3.06.74.81 1.19 1.83 1.19 3.1 0 4.45-2.71 5.44-5.29 5.72.42.36.78 1.05.78 2.12v3.14c0 .31.21.67.8.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z" fill="currentColor" stroke="none"></path></svg></span><span>Code</span></a>
+          <a class="link-arxiv" href="https://arxiv.org/abs/2505.06136" target="_blank"><span class="link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="8" y1="13" x2="16" y2="13"></line><line x1="8" y1="17" x2="16" y2="17"></line></svg></span><span>ArXiv</span></a>
+          <a class="link-dataset" href="https://drive.google.com/drive/folders/1dco6ooYR7BWh_ULDX-n5EKZ5FFaU_rVQ" target="_blank"><span class="link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"></ellipse><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"></path><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"></path></svg></span><span>Dataset</span></a>
         </div>
       </div>
     </div>
@@ -221,6 +251,9 @@
         <div class="pub-venue">
           IEEE Transactions on Visualization and Computer Graphics (TVCG), 2025.
         </div>
+        <div class="pub-links">
+          <a class="link-doi" href="https://ieeexplore.ieee.org/document/11007209" target="_blank"><span class="link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a5 5 0 0 1 0-7l1.5-1.5a5 5 0 0 1 7 7L17 14"></path><path d="M14 10a5 5 0 0 1 0 7L12.5 18.5a5 5 0 0 1-7-7L7 10"></path></svg></span><span>DOI</span></a>
+        </div>
       </div>
     </div>
 
@@ -241,8 +274,8 @@
           Conference on Computer Vision and Pattern Recognition (CVPR), 2025.
         </div>
         <div class="pub-links">
-          [<a href="https://github.com/lym29/EasyHOI" target="_blank">Code</a>]
-          [<a href="https://arxiv.org/abs/2411.14280" target="_blank">Arxiv</a>]
+          <a class="link-code" href="https://github.com/lym29/EasyHOI" target="_blank"><span class="link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.11.79-.25.79-.56v-2.03c-3.2.7-3.88-1.35-3.88-1.35-.52-1.34-1.27-1.7-1.27-1.7-1.04-.7.08-.69.08-.69 1.16.08 1.77 1.19 1.77 1.19 1.02 1.77 2.69 1.26 3.35.97.1-.75.4-1.26.73-1.54-2.56-.29-5.26-1.29-5.26-5.73 0-1.27.45-2.29 1.19-3.1-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.17 1.18a10.95 10.95 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.77.12 3.06.74.81 1.19 1.83 1.19 3.1 0 4.45-2.71 5.44-5.29 5.72.42.36.78 1.05.78 2.12v3.14c0 .31.21.67.8.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z" fill="currentColor" stroke="none"></path></svg></span><span>Code</span></a>
+          <a class="link-arxiv" href="https://arxiv.org/abs/2411.14280" target="_blank"><span class="link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="8" y1="13" x2="16" y2="13"></line><line x1="8" y1="17" x2="16" y2="17"></line></svg></span><span>ArXiv</span></a>
         </div>
       </div>
     </div>
@@ -265,9 +298,9 @@
           International Joint Conference on Artificial Intelligence (IJCAI), 2024.
         </div>
         <div class="pub-links">
-          [<a href="https://github.com/4DVLab/RealDex" target="_blank">Code</a>]
-          [<a href="https://drive.google.com/drive/folders/1d5OSVuvYr6-OMG_cuKeoFy6lNdezX8nc" target="_blank">Database</a>]
-          [<a href="https://doi.org/10.24963/ijcai.2024/758" target="_blank">DOI</a>]
+          <a class="link-code" href="https://github.com/4DVLab/RealDex" target="_blank"><span class="link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.11.79-.25.79-.56v-2.03c-3.2.7-3.88-1.35-3.88-1.35-.52-1.34-1.27-1.7-1.27-1.7-1.04-.7.08-.69.08-.69 1.16.08 1.77 1.19 1.77 1.19 1.02 1.77 2.69 1.26 3.35.97.1-.75.4-1.26.73-1.54-2.56-.29-5.26-1.29-5.26-5.73 0-1.27.45-2.29 1.19-3.1-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.17 1.18a10.95 10.95 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.77.12 3.06.74.81 1.19 1.83 1.19 3.1 0 4.45-2.71 5.44-5.29 5.72.42.36.78 1.05.78 2.12v3.14c0 .31.21.67.8.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z" fill="currentColor" stroke="none"></path></svg></span><span>Code</span></a>
+          <a class="link-database" href="https://drive.google.com/drive/folders/1d5OSVuvYr6-OMG_cuKeoFy6lNdezX8nc" target="_blank"><span class="link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"></ellipse><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"></path><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"></path></svg></span><span>Dataset</span></a>
+          <a class="link-doi" href="https://doi.org/10.24963/ijcai.2024/758" target="_blank"><span class="link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a5 5 0 0 1 0-7l1.5-1.5a5 5 0 0 1 7 7L17 14"></path><path d="M14 10a5 5 0 0 1 0 7L12.5 18.5a5 5 0 0 1-7-7L7 10"></path></svg></span><span>DOI</span></a>
         </div>
       </div>
     </div>
@@ -290,7 +323,7 @@
           European Conference on Computer Vision (ECCV), 2020.
         </div>
         <div class="pub-links">
-          [<a href="https://doi.org/10.1007/978-3-030-58555-6_29" target="_blank">DOI</a>]
+          <a class="link-doi" href="https://doi.org/10.1007/978-3-030-58555-6_29" target="_blank"><span class="link-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a5 5 0 0 1 0-7l1.5-1.5a5 5 0 0 1 7 7L17 14"></path><path d="M14 10a5 5 0 0 1 0 7L12.5 18.5a5 5 0 0 1-7-7L7 10"></path></svg></span><span>DOI</span></a>
         </div>
       </div>
     </div>
